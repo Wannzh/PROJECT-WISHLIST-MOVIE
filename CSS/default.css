@@ -1,0 +1,161 @@
+/* Fonts Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Set Default CSS */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 5rem;
+}
+
+/* Mengatur Scroll Bar */
+html::-webkit-scrollbar {
+    background: #000;
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+/* Default Element */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+img {
+    width: 100%;
+}
+
+.bx {
+    cursor: pointer;
+}
+
+body {
+    background: var(--body-color);
+    color: var(--text-color);
+}
+
+
+/* Style */
+/* .container {
+    max-width: 1000px;
+    margin: auto;
+    width: 80%;
+} */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 5%;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+/* NAVBAR */
+.container-navbar {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    column-gap: 2rem;
+}
+
+.navlink {
+    color: var(--text-color);
+
+}
+
+/* Search Box */
+.search-box {
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 0 0 0 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+    transition:.3s;
+}
+
+.ikon-search {
+    width:50px;
+    height:40px;
+    background-color: var(--main-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 50% 50% 0;
+    box-sizing: border-box;
+}
+
+.search {
+    max-width: 300px;
+}
+
+.search-box .bx {
+    font-size: 1.1rem;
+}
+
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.938rem;
+}
+
+/* User */
+.pict {
+    display: flex;
+}
+
+.pict img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+form button {
+    border:none;
+    color:white;
+}
