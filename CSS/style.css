@@ -1,6 +1,6 @@
 /* DISPLAY HOME */
 .display-container {
-    padding: 7rem;
+    padding: 8rem;
 }
 
 .slider-wrapper {
@@ -37,7 +37,7 @@
 }
 
 .slide-text h1 {
-    color: #fcfeff;
+    color: var(--text-color);
     text-shadow: 1px 1px 1px var(--main-color);
 }
 
@@ -102,8 +102,123 @@
     background: #2696E9;
 }
 
-/* Copyright */
-footer {
-    text-align: center;
-    padding: 20px;
+/* heading */
+.container {
+    position: relative;
+    margin: auto;
+    width: 90%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--back-color);
+    padding: 8px 30px;
+    border: 1px solid hsl(200 100% 99% / 5%);
+}
+
+.heading-tittle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* content style */
+.content {
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    gap: 20px;
+}
+
+figure {
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+figure>img {
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content figure:hover {
+    transform: scale(1.1);
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar {
+    background: var(--scr-color);
+    width: 0.5rem;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);
+}
+
+.judul {
+    color: var(--text-color);
+}
+
+/* Responsive */
+@media (max-width: 1103px) {
+    .content img {
+        width: 150px;
+    }
+
+    .content figcaption {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 887px) {
+    .content img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 429px) {
+    .heading-tittle {
+        font-size: 1rem;
+    }
+
+    figure {
+        padding: 10px;
+        margin: 0;
+        width: 100px; 
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .content {
+        gap: 2px;
+    }
+
+    .content img {
+        width: 80px;
+    }
+
+    .content figcaption {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 391px) {
+    .content img {
+        width: 70px;
+    }
+
+    .content figcaption {
+        font-size: 6px;
+    }
+
+    .content {
+        gap: 0;
+    }
 }

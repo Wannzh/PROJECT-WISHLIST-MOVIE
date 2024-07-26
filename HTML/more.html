@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/def-color.css" />
+    <link rel="stylesheet" href="../CSS/default.css" />
+    <link rel="stylesheet" href="../CSS/more.css" />
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+    <!-- ICON -->
+    <link
+      rel="shortcut icon"
+      href="../assets/logo-favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>WanFlix</title>
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header>
+      <div class="head">
+        <!-- Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+        <!-- LOGO -->
+        <a href="../HTML/index.html" class="logo">
+          <div class="pict">
+            <img src="../assets/logo.webp" alt="icon" />
+          </div>
+          <div>Wan<span>Flix</span></div>
+        </a>
+
+        <!-- NAV START -->
+        <nav class="container-navbar hidden" id="menu-list">
+          <ul>
+            <li>
+              <a href="" class="navlink">Movies</a>
+              <ul class="dropdown">
+                <li><a href="../HTML/more.html?category=popular">Popular</a></li>
+                <li><a href="../HTML/more.html?category=now_playing">Now Playing</a></li>
+                <li><a href="../HTML/more.html?category=upcoming">Upcoming</a></li>
+                <li><a href="../HTML/more.html?category=top_rated">Top Rated</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="navlink">TV Shows</a>
+              <ul class="dropdown">
+                <li><a href="../HTML/more.html?category=tv_popular">Popular</a></li>
+                <li><a href="../HTML/more.html?category=airing_today">Airing Today</a></li>
+                <li><a href="../HTML/more.html?category=on_the_air">On TV</a></li>
+                <li><a href="../HTML/more.html?category=tv_top_rated">Top Rated</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- Search Box -->
+        <form action="../HTML/search.html" class="search-box">
+          <input
+            type="search"
+            name="q"
+            id="search-input"
+            placeholder="Search movie..."
+            required
+          />
+          <button type="submit" class="ikon-search" for="search-input">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+
+        <!-- User -->
+        <div class="pict">
+          <img src="../assets/user.jpg" alt="Foto" />
+          <i id="theme" class="bx bx-sun"></i>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <main>
+      <section class="container">
+        <!-- Heading -->
+        <div class="heading">
+          <h2 id="heading-title" class="heading-title">Loading...</h2>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+          <!-- isi Kontent -->
+        </div>
+
+        <!-- Halaman -->
+        <div class="pagination">
+          <!-- Tombol Back / Kembalii -->
+          <button id="prev-page" class="pagination-btn">Previous</button>
+          <!-- Isi Jumlah Halaman -->
+          <span id="current-page">Page 1</span> of
+          <span id="total-pages">1</span>
+          <!-- Tombol Next / Selanjutnya -->
+          <button id="next-page" class="pagination-btn">Next</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer>
+      <p>&#169; M.A.F All Right Reserved</p>
+    </footer>
+    <!-- FOOTER END-->
+
+    <!-- Script JS -->
+    <script src="../JS/more.js"></script>
+    <script src="../JS/theme.js"></script>
+    <script src="../JS/responsive.js"></script>
+  </body>
+</html>

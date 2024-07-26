@@ -1,126 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="../CSS/def-color.css"/>
+    <link rel="stylesheet" href="../CSS/def-color.css" />
     <link rel="stylesheet" href="../CSS/default.css" />
-    <link rel="stylesheet" href="../CSS/style.css"/>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/responsive.css" />
 
     <!-- ICON -->
-    <link  rel="shortcut icon" href="../image/logo-favicon.ico" type="image/x-icon">
     <link
-    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-    rel="stylesheet"
+      rel="shortcut icon"
+      href="../assets/logo-favicon.ico"
+      type="image/x-icon"
     />
-<title>WanFlix</title>
-</head>
-<body>
-     <!-- START HEADER -->
-     <header>
-        <div class="head">
-          <!-- LOGO -->
-          <a href="index.html" class="logo">
-            <div class="pict">
-              <img src="../image/logo.webp" alt="icon" />
-            </div>
-            <div>Wan<span>Flix</span></div>
-          </a>
-          
-          <!-- NAV START -->
-          <nav class="container-navbar">
-            <a href="" class="navlink">
-              <div class="navbar">Film</div>
-            </a>
-            <a href="" class="navlink">
-              <div class="navbar">Serial TV</div>
-            </a>
-          </nav>
-          <!-- NAV END -->
-  
-          <!-- Search Box -->
-          <form action="search.html" class="search-box">
-            <input
-              type="search"
-              name="q"
-              id="search-input"
-              placeholder="Search movie..."
-              required
-            />
-            <button type="submit" class="ikon-search" for="search-input">
-              <i class="bx bx-search"></i>
-            </button>
-          </form>
-  
-          <!-- User -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>WanFlix</title>
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header>
+      <div class="head">
+        <!-- Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
           <div class="pict">
-            <img src="../image/user.jpg" alt="Foto" />
+            <img src="../assets/logo.webp" alt="icon" />
+          </div>
+          <div>Wan<span>Flix</span></div>
+        </a>
+
+        <!-- NAV START -->
+        <nav class="container-navbar hidden" id="menu-list">
+          <ul>
+            <li>
+              <a href="" class="navlink">Movies</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="../HTML/more.html?category=popular">Popular</a>
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=now_playing"
+                    >Now Playing</a
+                  >
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=upcoming">Upcoming</a>
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=top_rated">Top Rated</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="navlink">TV Shows</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="../HTML/more.html?category=tv_popular">Popular</a>
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=airing_today"
+                    >Airing Today</a
+                  >
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=on_the_air">On TV</a>
+                </li>
+                <li>
+                  <a href="../HTML/more.html?category=tv_top_rated"
+                    >Top Rated</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- Search Box -->
+        <form action="../HTML/search.html" class="search-box">
+          <input
+            type="search"
+            name="q"
+            id="search-input"
+            placeholder="Search movie..."
+            required
+          />
+          <button type="submit" class="ikon-search" for="search-input">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+
+        <!-- User -->
+        <div class="pict">
+          <img src="../assets/user.jpg" alt="Foto" />
+          <i id="theme" class="bx bx-sun"></i>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- CONTENT START -->
+    <main>
+      <!-- DISPLAY HOME -->
+      <section class="display-container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <video
+              id="slide-1"
+              src="../assets/trailer-deadpool&wolverine.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+            <video
+              id="slide-2"
+              src="../assets/trailer-kingdom.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+            <video
+              id="slide-3"
+              src="../assets/trailer-winnie.mp4"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="slide-text active">
+            <h1 class="home-title">
+              Deadpool <br />
+              & Wolverine
+            </h1>
+            <p>In Theaters 26 July 2024</p>
+            <a
+              href="../HTML/film.html?id=533535&type=movie"
+              class="trailer-btn"
+              id="533535"
+            >
+              <i class="bx bx-right-arrow"></i>
+              <span>More Detail</span>
+            </a>
+          </div>
+          <div class="slide-text">
+            <h1 class="home-title">
+              Kingdom of the <br />
+              Planet of the Apes
+            </h1>
+            <p>Released 09 Mei 2024</p>
+            <a
+              href="../HTML/film.html?id=653346&type=movie"
+              class="trailer-btn"
+              id="653346"
+            >
+              <i class="bx bx-right-arrow"></i>
+              <span>More Detail</span>
+            </a>
+          </div>
+          <div class="slide-text">
+            <h1 class="home-title">
+              Winnie-the-Pooh: <br />
+              Blood and Honey 2
+            </h1>
+            <p>Released 26 March 2024</p>
+            <a
+              href="../HTML/film.html?id=1079485&type=movie"
+              class="trailer-btn"
+              id="1079485"
+            >
+              <i class="bx bx-right-arrow"></i>
+              <span>More Detail</span>
+            </a>
+          </div>
+          <div class="slider-nav">
+            <a class="slider-home active" href="#slide-1"></a>
+            <a class="slider-home" href="#slide-2"></a>
+            <a class="slider-home" href="#slide-3"></a>
           </div>
         </div>
-      </header>
-      <!-- END HEADER -->
-  
-  
-      <!-- CONTENT START -->
-      <main>
-          <!-- DISPLAY HOME -->
-          <section class="display-container">
-              <div class="slider-wrapper">
-                  <div class="slider">
-                      <video id="slide-1" src="../image/trailer-deadpool&wolverine.mp4" autoplay muted loop></video>
-                      <video id="slide-2" src="../image/trailer-kingdom.mp4" autoplay muted loop></video>
-                      <video id="slide-3" src="../image/trailer-winnie.mp4" autoplay muted loop></video>
-                  </div>
-                  <div class="slide-text active">
-                    <h1 class="home-title">Deadpool & <br> Wolverine</h1>
-                    <p>In Theaters 26 July 2024</p>
-                    <a href="" class="trailer-btn">
-                      <i class="bx bx-right-arrow"></i>
-                      <span>Watch Trailer</span>
-                    </a>
-                  </div>
-                  <div class="slide-text">
-                    <h1 class="home-title">Kingdom of the <br> Planet of the Apes</h1>
-                    <p>Released 09 Mei 2024</p>
-                    <a href="" class="trailer-btn">
-                      <i class="bx bx-right-arrow"></i>
-                      <span>Watch Trailer</span>
-                    </a>
-                  </div>
-                  <div class="slide-text">
-                    <h1 class="home-title">Winnie-the-Pooh: <br> Blood and Honey 2</h1>
-                    <p>Released 26 March 2024</p>
-                    <a href="" class="trailer-btn">
-                      <i class="bx bx-right-arrow"></i>
-                      <span>Watch Trailer</span>
-                    </a>
-                  </div>
-                  <div class="slider-nav">
-                      <a class="slider-home active" href="#slide-1"></a>
-                      <a class="slider-home" href="#slide-2"></a>
-                      <a class="slider-home" href="#slide-3"></a>
-                  </div>
-              </div>
-          </section>
-          <!-- DISPLAY HOME END -->
+      </section>
+      <!-- DISPLAY HOME END -->
 
-          <section class="col">
+      <!-- MAIN SECTION START -->
+      <section class="main container">
+        <!-- HEADING -->
+        <div class="heading">
+          <h2 class="heading-tittle">Popular</h2>
+          <a href="../HTML/more.html?category=popular" class="heading-tittle"
+            ><i class="bx bxs-chevrons-right"></i
+          ></a>
+        </div>
 
-          </section>
-      </main>
-      <!-- CONTENT END -->
-  
-      <!-- FOOTER START -->
-      <footer>
-          <p>&#169; M.A.F All Right Reserved</p>
-      </footer>
-      
-      <!-- FOOTER END-->
+        <!-- Content -->
+        <div id="popular" class="content"></div>
+      </section>
+      <!-- MAIN END -->
 
-      <!-- JAVA SCRIPT -->
-      <script src="../JS/script.js"></script>
-      
-    </body>
-</body>
+      <!-- PLAYING SECTION START -->
+      <section class="playing container">
+        <!-- HEEADING -->
+        <div class="heading">
+          <h2 class="heading-tittle">Now Playing</h2>
+          <a
+            href="../HTML/more.html?category=now_playing"
+            class="heading-tittle"
+            ><i class="bx bxs-chevrons-right"></i
+          ></a>
+        </div>
+
+        <!-- Content -->
+        <div id="now-playing" class="content"></div>
+      </section>
+      <!-- NOW PLAYING END -->
+
+      <!-- UP COMING SECTION START -->
+      <section class="upcoming container">
+        <!-- HEADING -->
+        <div class="heading">
+          <h2 class="heading-tittle">UpComing</h2>
+          <a href="../HTML/more.html?category=upcoming" class="heading-tittle"
+            ><i class="bx bxs-chevrons-right"></i
+          ></a>
+        </div>
+
+        <!-- Content -->
+        <div id="up-coming" class="content"></div>
+      </section>
+      <!-- UP COMING END -->
+    </main>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <footer>
+      <p>&#169; M.A.F All Right Reserved</p>
+    </footer>
+    <!-- FOOTER END-->
+
+    <!-- JAVA SCRIPT -->
+    <script src="../JS/script.js"></script>
+    <script src="../JS/theme.js"></script>
+    <script src="../JS/responsive.js"></script>
+  </body>
 </html>

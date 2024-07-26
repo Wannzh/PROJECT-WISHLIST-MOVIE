@@ -13,21 +13,17 @@
 
 /* Mengatur Scroll Bar */
 html::-webkit-scrollbar {
-    background: #000;
+    background: var(--body-color);
     width: 0.5rem;
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--main-color);
+    background: var(--scroll-color);
 }
 
 /* Default Element */
 a {
     text-decoration: none;
-}
-
-li {
-    list-style: none;
 }
 
 section {
@@ -47,20 +43,13 @@ body {
     color: var(--text-color);
 }
 
-
 /* Style */
-/* .container {
-    max-width: 1000px;
-    margin: auto;
-    width: 80%;
-} */
-
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: var(--header-color);
     z-index: 10;
 }
 
@@ -87,17 +76,64 @@ header {
     color: var(--main-color);
 }
 
+/* menu-icon */
+.menu-icon {
+    font-size: 40px;
+    display: none;
+}
+
 /* NAVBAR */
 .container-navbar {
-    display: flex;
-    position: absolute;
-    left: 20%;
+    margin-right: 35%;
     column-gap: 2rem;
 }
 
 .navlink {
     color: var(--text-color);
+}
 
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px 5px;
+    color: var(--teks-color);
+    text-align: start;
+    font-size: 18px;
+    margin-bottom : 7px;
+}
+
+ul li ul.dropdown  li {
+    display: block;
+}
+
+ul li ul.dropdown li a {
+    font-size: 14px;
+}
+
+ul li ul.dropdown {
+    width: 200px;
+    height: 220px;
+    background: var(--container-color);
+    position: absolute;
+    border-radius: 8px;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    color: var(--main-color);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
 }
 
 /* Search Box */
@@ -137,7 +173,7 @@ header {
     width: 100%;
     border: none;
     outline: none;
-    color: var(--text-color);
+    color: var(--teks-color);
     background: transparent;
     font-size: 0.938rem;
 }
@@ -155,7 +191,23 @@ header {
     object-position: center;
 }
 
+.pict .bx {
+    margin-left: 12%;
+    position: relative;
+    font-size: 150%;
+    top: 7px;
+    cursor: pointer;
+}
+
 form button {
     border:none;
     color:white;
+}
+
+/* Copyright */
+footer {
+    text-align: center;
+    padding: 2%;
+    color: var(--text-color);
+    background: var(--header-color);
 }

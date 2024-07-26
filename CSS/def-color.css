@@ -4,4 +4,21 @@
     --body-color:#0f0f0f;
     --container-color: #2d2e37;
     --text-color: #fcfeff;
+    --teks-color:   #fcfeff;
+    --header-color: #000;
+    --head-color: #fff;
+    --back-color: #2d2e37;
+    --scr-color: #fff;
+    --scroll-color: #e41212;
+}
+
+.light-theme {
+    --header-color: rgb(3, 37, 65);
+    --body-color: #bbb8b8;
+    --container-color: #fff;
+    --teks-color: #000;
+    --head-color: #000;
+    --back-color: rgb(29, 33, 57);
+    --scr-color: #faf0f0;
+    --scroll-color: rgb(29, 33, 57);
 }
