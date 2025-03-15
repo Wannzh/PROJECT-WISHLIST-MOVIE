@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/def-color.css" />
+    <link rel="stylesheet" href="../CSS/film.css" />
+    <link rel="stylesheet" href="../CSS/default.css" />
+    <link rel="stylesheet" href="../CSS/responsive.css" />
+
+    <!-- ICON -->
+    <link
+      rel="shortcut icon"
+      href="../assets/logo-favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>WanFlix</title>
+  </head>
+  <body>
+    <!-- START HEADER -->
+    <header>
+      <div class="head">
+        <!-- Menu Icon -->
+        <div class="menu-icon" id="menu-icon">
+          <i class="bx bx-menu"></i>
+        </div>
+        <!-- LOGO -->
+        <a href="../docs/index.html" class="logo">
+          <div class="pict">
+            <img src="../assets/logo.webp" alt="icon" />
+          </div>
+          <div>Wan<span>Flix</span></div>
+        </a>
+
+        <!-- NAV START -->
+        <nav class="container-navbar hidden" id="menu-list">
+          <ul>
+            <li>
+              <a href="" class="navlink">Movies</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="../docs/more.html?category=popular">Popular</a>
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=now_playing"
+                    >Now Playing</a
+                  >
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=upcoming">Upcoming</a>
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=top_rated">Top Rated</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="navlink">TV Shows</a>
+              <ul class="dropdown">
+                <li>
+                  <a href="../docs/more.html?category=tv_popular">Popular</a>
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=airing_today"
+                    >Airing Today</a
+                  >
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=on_the_air">On TV</a>
+                </li>
+                <li>
+                  <a href="../docs/more.html?category=tv_top_rated"
+                    >Top Rated</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- Search Box -->
+        <form action="../docs/search.html" class="search-box">
+          <input
+            type="search"
+            name="q"
+            id="search-input"
+            placeholder="Search movie..."
+            required
+          />
+          <button type="submit" class="ikon-search" for="search-input">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+
+        <!-- User -->
+        <div class="pict">
+          <img src="../assets/user.jpg" alt="Foto" />
+          <i id="theme" class="bx bx-sun"></i>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- Main Content -->
+    <main>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- Heading -->
+      <div class="heading">
+        <h2 class="heading-title">About Movie</h2>
+      </div>
+
+      <!-- Movie -->
+      <div class="movie">
+        <!-- background -->
+        <img class="bg" />
+        <!-- Poster Film -->
+        <figure><img /></figure>
+        <div class="title">
+          <h1>
+            <!-- Judul -->
+          </h1>
+          <p>
+            <!-- tanggal rilis dan genre -->
+            <span></span>
+          </p>
+          <p>
+            <!-- rating -->
+          </p>
+          <div>
+            <i class="icon material-icons">list</i>
+            <i class="icon material-icons">favorite</i>
+            <i class="icon material-icons">bookmark</i>
+            <div class="play">
+              <i class="material-icons">play_arrow</i>
+              <span>Play Trailer</span>
+            </div>
+          </div>
+          <p class="tagline">
+            <!-- tagline -->
+          </p>
+          <h3>Overview</h3>
+          <p class="desk">
+            <!-- deskripsi -->
+          </p>
+        </div>
+        <!-- Trailer Video -->
+        <div id="trailer" class="trail">
+          <div class="trail-content">
+            <span class="close">&times;</span>
+            <iframe id="trailer-video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- detail -->
+      <section>
+        <!-- Cast Film -->
+        <div class="cast">
+          <div class="tag">
+            <h2 class="tag-title">Cast</h2>
+          </div>
+          <div class="content"></div>
+        </div>
+        <!-- Cast END -->
+
+        <!-- Recomend Film -->
+        <div class="recomend film">
+          <div class="tag">
+            <h2 class="tag-title">Recomendation Film</h2>
+          </div>
+          <div class="content"></div>
+        </div>
+        <!-- Recomend END -->
+
+        <!-- Similar FIlm -->
+        <div class="similar film">
+          <div class="tag">
+            <h2 class="tag-title">Similar Film</h2>
+          </div>
+          <div class="content"></div>
+        </div>
+        <!-- SImilar END -->
+      </section>
+    </main>
+
+    <!-- FOOTER START -->
+    <footer>
+      <p>&#169; M.A.F All Right Reserved</p>
+    </footer>
+    <!-- FOOTER END-->
+
+    <!-- Script JS -->
+    <script src="../JS/film.js"></script>
+    <script src="../JS/theme.js"></script>
+    <script src="../JS/responsive.js"></script>
+  </body>
+</html>
