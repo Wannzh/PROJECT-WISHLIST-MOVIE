@@ -11,8 +11,13 @@ Anda dapat mengakses proyek ini secara langsung melalui link berikut:
 
 ## 🌟 Tampilan
 
-![Tampilan Aplikasi](https://github.com/user-attachments/assets/bd965caf-84b6-4772-846f-fcf7abe6ce60)
-**
+Berikut adalah tampilan proyek dalam mode gelap dan mode terang.
+
+**Mode Gelap (Dark Mode)**
+![Tampilan Aplikasi Mode Gelap](https://github.com/user-attachments/assets/bd965caf-84b6-4772-846f-fcf7abe6ce60)
+
+**Mode Terang (Light Mode)**
+![Tampilan Aplikasi Mode Terang](https://github.com/user-attachments/assets/d84c73cd-298e-49a1-8b49-1cd9323adbda)
 
 ## ✨ Fitur Utama
 
@@ -38,12 +43,12 @@ Proyek ini tidak memerlukan proses *build* atau kompilasi yang rumit. Cukup ikut
 
 1.  **Clone repositori ini ke mesin lokal Anda:**
     ```bash
-    git clone [https://github.com/wannzh/project-wishlist-movie.git](https://github.com/wannzh/project-wishlist-movie.git)
+    git clone [https://github.com/wannzh/PROJECT-WISHLIST-MOVIE.git](https://github.com/wannzh/PROJECT-WISHLIST-MOVIE.git)
     ```
 
 2.  **Masuk ke direktori proyek:**
     ```bash
-    cd nama-repositori
+    cd PROJECT-WISHLIST-MOVIE
     ```
 
 3.  **Konfigurasi API Key:**
@@ -62,8 +67,6 @@ Proyek ini tidak memerlukan proses *build* atau kompilasi yang rumit. Cukup ikut
 ## 📄 Sumber Data
 
 Seluruh data film dan acara TV pada proyek ini disediakan oleh **The Movie Database (TMDb) API**.
-
-
 
 ---
 
