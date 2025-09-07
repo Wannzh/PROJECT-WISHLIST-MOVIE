@@ -1,75 +1,75 @@
-# 🎬 Project Katalog Film
+# 🎬 Movie Catalog Project
 
-Sebuah aplikasi web sederhana yang menampilkan daftar film dan acara TV populer menggunakan data dari The Movie Database (TMDb) API. Proyek ini dibuat untuk tujuan pembelajaran dan portofolio menggunakan teknologi dasar web: HTML, CSS, dan JavaScript.
+A simple web application that displays a list of popular movies and TV shows using data from The Movie Database (TMDb) API. This project was created for learning and portfolio purposes using fundamental web technologies: HTML, CSS, and JavaScript.
 
 ## 🚀 Demo / Live Project
 
-Anda dapat mengakses proyek ini secara langsung melalui link berikut:
+You can access the live project through the following links:
 
 -   **Vercel:** [https://project-list-movie.vercel.app/](https://project-list-movie.vercel.app/)
 -   **GitHub Pages:** [https://wannzh.github.io/PROJECT-WISHLIST-MOVIE/](https://wannzh.github.io/PROJECT-WISHLIST-MOVIE/)
 
-## 🌟 Tampilan
+## 🌟 Appearance
 
-Berikut adalah tampilan proyek dalam mode gelap dan mode terang.
+Here is the project's appearance in both dark and light modes.
 
-**Mode Gelap (Dark Mode)**
-![Tampilan Aplikasi Mode Gelap](https://github.com/user-attachments/assets/bd965caf-84b6-4772-846f-fcf7abe6ce60)
+**Dark Mode**
+![Dark Mode Preview](https://github.com/user-attachments/assets/bd965caf-84b6-4772-846f-fcf7abe6ce60)
 
-**Mode Terang (Light Mode)**
-![Tampilan Aplikasi Mode Terang](https://github.com/user-attachments/assets/d84c73cd-298e-49a1-8b49-1cd9323adbda)
+**Light Mode**
+![Light Mode Preview](https://github.com/user-attachments/assets/d84c73cd-298e-49a1-8b49-1cd9323adbda)
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
--   **Daftar Film Populer**: Menampilkan film yang sedang tren saat ini.
--   **Daftar Acara TV Teratas**: Menampilkan serial TV dengan rating tertinggi.
--   **Detail Singkat**: Menampilkan informasi penting seperti poster, judul, tanggal rilis, dan rating.
--   **Desain Responsif**: Tampilan yang menyesuaikan dengan berbagai ukuran layar, mulai dari desktop hingga mobile.
--   **Interaksi Sederhana**: Dibuat murni dengan JavaScript vanilla, tanpa *framework* atau *library* eksternal.
-
----
-
-## 🔧 Teknologi yang Digunakan
-
--   **HTML5**: Untuk struktur dan kerangka konten web.
--   **CSS3**: Untuk styling, layout, dan desain visual.
--   **JavaScript (ES6+)**: Untuk logika aplikasi, manipulasi DOM, dan interaksi dengan TMDb API (menggunakan `fetch`).
+-   **Popular Movies List**: Displays currently trending movies.
+-   **Top-Rated TV Shows**: Shows TV series with the highest ratings.
+-   **Brief Details**: Shows essential information like poster, title, release date, and rating.
+-   **Responsive Design**: The layout adjusts to various screen sizes, from desktop to mobile.
+-   **Simple Interaction**: Built purely with vanilla JavaScript, without any external frameworks or libraries.
 
 ---
 
-## 🛠️ Instalasi dan Menjalankan Proyek
+## 🔧 Technologies Used
 
-Proyek ini tidak memerlukan proses *build* atau kompilasi yang rumit. Cukup ikuti langkah-langkah berikut:
+-   **HTML5**: For the structure and framework of the web content.
+-   **CSS3**: For styling, layout, and visual design.
+-   **JavaScript (ES6+)**: For application logic, DOM manipulation, and interacting with the TMDb API (using `fetch`).
 
-1.  **Clone repositori ini ke mesin lokal Anda:**
+---
+
+## 🛠️ Installation and Setup
+
+This project does not require a complex build or compilation process. Just follow these steps:
+
+1.  **Clone this repository to your local machine:**
     ```bash
     git clone [https://github.com/wannzh/PROJECT-WISHLIST-MOVIE.git](https://github.com/wannzh/PROJECT-WISHLIST-MOVIE.git)
     ```
 
-2.  **Masuk ke direktori proyek:**
+2.  **Navigate into the project directory:**
     ```bash
     cd PROJECT-WISHLIST-MOVIE
     ```
 
-3.  **Konfigurasi API Key:**
-    -   Dapatkan **API Key** gratis dari [The Movie Database (TMDb)](https://www.themoviedb.org/signup).
-    -   Buka file JavaScript `script.js`.
-    -   Cari variabel untuk API Key dan ganti nilainya dengan key yang Anda dapatkan.
+3.  **Configure the API Key:**
+    -   Get your free **API Key** from [The Movie Database (TMDb)](https://www.themoviedb.org/signup).
+    -   Open the main JavaScript file, `script.js`.
+    -   Find the API Key variable and replace its value with your own key.
       ```javascript
-      // Contoh di dalam file .js Anda
-      const API_KEY = 'MASUKKAN_API_KEY_ANDA_DI_SINI';
+      // Example inside your .js file
+      const API_KEY = 'YOUR_API_KEY_HERE';
       ```
 
-4.  **Buka file `index.html`** di browser favorit Anda.
+4.  **Open the `index.html` file** in your favorite browser.
 
 ---
 
-## 📄 Sumber Data
+## 📄 Data Source
 
-Seluruh data film dan acara TV pada proyek ini disediakan oleh **The Movie Database (TMDb) API**.
+All movie and TV show data in this project is provided by **The Movie Database (TMDb) API**.
 
 ---
 
-## 📜 Lisensi
+## 📜 License
 
-Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
